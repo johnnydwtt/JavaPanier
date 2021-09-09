@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Boutique La Manu</title>
+</head>
+
+<body>
+
+
+    <header class="mb-5">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-manusien">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav fs-5">
+                        <li class="nav-item">
+                            <a class="nav-link active fw-bold" aria-current="page" href="#">Boutique El'Manu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="btnCat1" class="nav-link active" href="#">Catégorie 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="btnCat2" class="nav-link" href="#">Catégorie 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="btnCat3" class="nav-link" href="#">Catégorie 3</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <button id="btnCart" type="button" class="btn btn-manusien position-relative" data-bs-toggle="modal" data-bs-target="#cart">
+                    Panier
+                    <span class="d-none position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="cartCount">
+                        
+                    </span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1 id="titleH1" class="mb-4"></h1>
+            </div>
+        </div>
+        <div class="row" id="products">
+
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal" tabindex="-1" id="cart" >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Panier</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Produit</th>
+                        <th scope="col">Quantité</th>
+                        <th scope="col">Montant</th>
+                      </tr>
+                    </thead>
+                    <tbody id="line">
+                      
+
+                    </tbody>
+                  </table>
+                  <div><span class='fw-bold'>Total : </span><span id="totalCart"></span></div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+              <button type="button" class="btn btn-primary">Commander</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

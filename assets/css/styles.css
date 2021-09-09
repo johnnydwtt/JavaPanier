@@ -1,0 +1,13 @@
+.fa-minus-square, .fa-plus-square{
+    cursor: pointer;
+}
+
+.bg-manusien{
+    background-color: #1A4867;
+}
+
+.btn-manusien{
+    color: #fff;
+    background-color: #2DABE3;
+    border-color: #2DABE3;
+}
